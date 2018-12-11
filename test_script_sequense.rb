@@ -1,6 +1,6 @@
 require_relative 'lib/sequense'
 
-puts "Тестовое задание, версия 0.1 beta"
+puts "Тестовое задание, версия 0.2 beta"
 
 sequense = Sequense.new
 
