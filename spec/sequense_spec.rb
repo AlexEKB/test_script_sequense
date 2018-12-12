@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'lib/ib/sequense'
+require_relative '../lib/sequense'
 
 describe 'Sequense' do
 
@@ -8,15 +8,15 @@ describe 'Sequense' do
 
   it 'should do ok for value 1' do
     seq.create_sequense
-    expect( seq.get_sequense).to eq '11'
+    expect(seq.value).to eq '11'
     seq.create_sequense
-    expect( seq.get_sequense).to eq '21'
+    expect(seq.value).to eq '21'
     seq.create_sequense
-    expect( seq.get_sequense).to eq '1211'
+    expect(seq.value).to eq '1211'
     seq.create_sequense
-    expect( seq.get_sequense).to eq '111221'
+    expect(seq.value).to eq '111221'
     seq.create_sequense
-    expect( seq.get_sequense).to eq '312211'
+    expect(seq.value).to eq '312211'
   end
 
 end

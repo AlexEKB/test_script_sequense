@@ -1,9 +1,9 @@
 class Sequense
   VALUE = '1'
+  attr_reader :value
 
   def initialize(value = nil)
     @value = value || VALUE
-    puts VALUE
   end
 
   def create_sequense
@@ -21,9 +21,5 @@ class Sequense
     next_value.map do |hash|
       hash.each { |k, v| @value << "#{v}#{k}" }
     end
-  end
-
-  def get_sequense
-    @value
   end
 end
