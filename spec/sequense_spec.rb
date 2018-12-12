@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'lib/sequense'
+require_relative 'lib/ib/sequense'
 
 describe 'Sequense' do
 
