@@ -8,6 +8,5 @@ puts sequense.value
 
 5.times do
   sequense.create_sequense
-  #puts sequense.get_sequense
   puts sequense.value
 end

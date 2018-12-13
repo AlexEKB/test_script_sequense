@@ -1,5 +1,5 @@
 class Sequense
-  VALUE = '1'
+  VALUE = '1'.freeze
   attr_reader :value
 
   def initialize(value = nil)
@@ -7,13 +7,12 @@ class Sequense
   end
 
   def create_sequense
-    next_value = @value.chars.inject([]) do |array, x|
-      if array.any? && array.last.has_key?(x)
+    next_value = @value.chars.each_with_object([]) do |x, array|
+      if array.any? && array.last.key?(x)
         array.last[x] += 1
       else
         array << { x => 1 }
       end
-      array
     end
 
     @value = ''
